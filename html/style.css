@@ -1,0 +1,682 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto';
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+table {
+    font-family: arial, sans-serif;
+    /* background-color: rgba(196, 172, 172, 0.164); */
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    text-align: left;
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    background-color: #c2abab;
+    z-index: 1;
+}
+
+td {
+    text-align: left;
+    position: relative;
+    padding: 7px 7px 7px 0px;
+    font-size: 12px;
+    z-index: 3;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.mobileHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #1e0e11;
+    padding: 4px;
+    margin: auto;
+}
+
+.tel {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.459);
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+.teaser {
+    background-image: url(../img/HG_1.jpg);
+    background-size: cover;
+}
+
+.teaser_div {
+    /*background-color: rgb(138, 104, 54);*/
+    position: absolute;
+    bottom: 180px;
+    right: 2%;
+    width: 340px;
+    height: 390px;
+    z-index: 2;
+}
+
+.teaser_logo {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+  /* Schrift statt Bild */
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Gold-Verlauf */
+  background: linear-gradient(135deg, #f9e29f, #f6c552, #d99a1a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* Glow-Effekt */
+  text-shadow:
+    0 0 8px rgba(0, 0, 0, 0.8),
+    0 0 18px rgba(217, 154, 26, 0.9);
+}
+
+
+
+
+.teaser_div>p:first-of-type {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 270px;
+    margin: auto;
+}
+
+.teaser_div>p:last-of-type {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.459);
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    color: white;
+    width: 170px;
+    margin: auto;
+}
+
+.leistung_mann {
+    background-image: url(../img/scissors-2409218_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 400px;
+    z-index: -1;
+}
+
+.team,
+.preise {
+    background-color: #f3efe9;
+    z-index: 1;
+}
+
+.kontakt,
+.galerie,
+.leistung {
+    background-image: url(../img/HG_2.jpg);
+    background-attachment: fixed;
+    color: #dbdac7;
+    z-index: 1;
+}
+
+#top_header,
+#topnav {
+    position: relative;
+    height: 47px;
+    width: 100vw;
+    background-color: #c2abab;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logoMain {
+    background: url(../img/Logo.svg);
+    width: 47px;
+    height: 47px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.flex_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontakt .flex_content .col-3 {
+    text-align: center;
+    align-self: baseline;
+    height: 110px;
+    width: 30%;
+}
+
+.kontakt .flex_content .col-3:nth-of-type(2) {
+    border-left: #ba968fe1 1px solid;
+    border-right: #ba968fe1 1px solid;
+}
+
+.flex_content_team .col-3 {
+    margin-top: 5vh;
+    text-align: left;
+    justify-content: space-evenly;
+    width: 30%;
+    z-index: 3;
+}
+
+.col-2 {
+    text-align: left;
+    width: 30%;
+}
+
+.col-1 {
+    text-align: center;
+    width: 90vw;
+}
+
+.team {
+    position: relative;
+}
+
+.team>.wrapper {
+    width: 95vw;
+    margin: auto;
+}
+
+.leistung {
+    position: relative;
+}
+
+.leistung>.wrapper {
+    width: 95vw;
+    margin: auto;
+}
+
+.preise {
+    position: relative;
+}
+
+.preise>.wrapper {
+    width: 95vw;
+    margin: auto;
+}
+
+.galerie {
+    position: relative;
+}
+
+.galerie>.wrapper {
+    width: 80vw;
+    margin: auto;
+}
+
+.kontakt>.wrapper {
+    width: 95vw;
+    margin: auto;
+}
+
+.ul_nav {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.ul_nav a {
+    text-decoration: none;
+    color: #1e0e11;
+    display: block;
+    /* background-color: #7e172b; */
+}
+
+.ul_nav a:hover:not(.active) {
+    color: #7e172b;
+}
+
+.active {
+    background-color: rgb(201, 151, 131);
+    border-bottom: black 3px solid;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+h1,
+p {
+    padding: 15px;
+}
+
+.team img {
+    width: 100%;
+}
+
+.flex_content .trenner_img {
+    width: 300px;
+}
+
+.team_small_member {
+    z-index: 4;
+}
+
+.team_job_descr {
+    font-size: 0.9em;
+}
+
+ul.liste_leistung {
+    list-style: none;
+}
+
+ul.liste_leistung>li::before {
+    content: "o";
+    font-size: 22px;
+    padding-right: 1rem;
+}
+
+ul.liste_leistung>li::after {
+    content: "|";
+    position: absolute;
+    left: 3.8px;
+    top: 18px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+ul.liste_leistung>li {
+    position: relative;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+ul.liste_leistung>li:hover {
+    font-size: 1.2rem;
+}
+
+ul.liste_leistung>li:hover::before {
+    color: #c78d99;
+    font-size: 22px;
+}
+
+ul.liste_leistung>li:last-child:after {
+    display: none;
+}
+
+.preise_sponsoren [class*="info"] {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* kontakt site */
+
+.write_us>p {
+    margin-top: 3vh;
+    margin-left: 1vw;
+}
+
+.form_ele_contact {
+    display: flex;
+    align-content: space-evenlyeen;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.form_ele_contact>* {
+    width: 100%;
+    background-color: #0000009a;
+    color: whitesmoke;
+    border: none;
+}
+
+#form_contact textarea {
+    min-height: 60%;
+    max-height: 70%;
+    min-width: 100%;
+}
+
+#form_contact input {
+    height: 30px;
+}
+
+#form_contact input[type="submit"] {
+    background-color: #c2abab;
+    text-align: center;
+    border: 1px solid rgb(31, 31, 14);
+    margin: auto;
+    color: #1e0e11;
+    width: 80px;
+}
+
+#form_contact {
+    height: 100%;
+}
+
+/* fancy nav => Hamburger Menu */
+
+#myNav,
+#myGal {
+    height: 0px;
+}
+
+#topnav a:not(.closebtn),
+.galerie a:not(.closebtn) {
+    color: #1e0e11;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#topnav a.icon {
+    /* background: black; */
+    color: #1e0e11;
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: 0;
+}
+
+#topnav a:hover:not(.closebtn) {
+    color: #7e172b;
+}
+
+#topnav .closebtn:hover {
+    background-color: #c2685c;
+    color: white;
+}
+
+#overlayGal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    /* Halbtransparentes Overlay */
+    z-index: 1000;
+    /* Höher als andere Elemente */
+    display: none;
+    pointer-events: auto;
+    /* Stellt sicher, dass das Overlay Klicks abfängt */
+}
+
+body.overlay-active {
+    overflow: hidden;
+    /* Verhindert Scrollen, während das Overlay aktiv ist */
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    background-color: #c2abab;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    width: 100%;
+}
+
+.overlay a {
+    display: block;
+}
+
+.overlay .closebtn:hover {
+    color: brown;
+}
+
+@media (max-width: 741px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        padding: 8px;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        cursor: pointer;
+        background-color: rgb(156, 8, 8);
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        top: 0px;
+        left: 0px;
+    }
+
+    .ul_nav a {
+        background-color: #c2abab;
+    }
+
+    .flex_content .col-1 {
+        width: 90vw;
+    }
+
+    .flex_content_team {
+        position: relative;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex_content_team .col-3 {
+        width: 90vw;
+        margin-bottom: 2vh;
+    }
+
+    .flex_content_preise {
+        position: relative;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .preise_sponsoren [class*="info"] {
+        position: relative;
+        text-align: center;
+    }
+
+    .flex_content.space_evenly {
+        position: relative;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .flex_content.space_evenly .col2 {
+        width: 90vw;
+        height: 50vh;
+        margin-bottom: 2vh;
+    }
+
+    .flex_content.space_evenly .col-preise {
+        background-color: rgb(240, 231, 231);
+        margin-bottom: 2vh;
+    }
+
+    .preise_sponsoren [class*="flx_"],
+    .leistung_mann,
+    .preise_schere,
+    .rect_left,
+    .rect_right {
+        display: none;
+    }
+
+    #top_header {
+        display: none;
+    }
+}
+
+@media (min-width: 741px) {
+
+    #menuToggle,
+    #topnav {
+        display: none;
+    }
+
+    .ul_nav li {
+        float: right;
+    }
+
+    .ul_nav a {
+        color: #1e0e11;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .ul_nav a:hover:not(.active) {
+        /* background-color: rgba(110, 18, 18, 0.658); */
+        color: #7e172b;
+    }
+
+    .ul_nav li:first-child {
+        float: left;
+    }
+
+    .ul_nav::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .flex_content_preise {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        margin-top: 1vh;
+    }
+
+    .preise_sponsoren {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: space-evenly;
+        align-content: flex-end;
+        text-align: center;
+    }
+
+    .flex_content_team {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        position: relative;
+        margin-top: 10vh;
+        height: 50vh;
+        align-self: baseline;
+        align-content: center;
+        z-index: 1;
+    }
+
+    .rect_left {
+        background-color: #9e8a84;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 150px;
+        height: 400px;
+        z-index: 2;
+    }
+
+    .rect_right {
+        background-color: #ba968f;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 400px;
+        height: 80px;
+        z-index: 2;
+    }
+
+    .flex_content.space_evenly {
+        justify-content: space-evenly;
+    }
+
+    .flex_content.space_evenly .col2 {
+        /* background-color: tomato; */
+        width: 48%;
+        height: 60vh;
+    }
+
+    .flex_content.space_evenly .col-preise:first-of-type {
+        width: 415px;
+        /* background-color: rgb(240, 231, 231); */
+        height: 62vh;
+        margin-bottom: 2vh;
+    }
+
+    .flex_content.space_evenly .col-preise:last-of-type {
+        width: 300px;
+        /* background-color:rgb(240, 231, 231); */
+        height: 62vh;
+        margin-bottom: 2vh;
+    }
+
+    .preise_schere {
+        background-image: url(../img/Schere.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 488px;
+        height: 488px;
+        z-index: 2;
+    }
+}

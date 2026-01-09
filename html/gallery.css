@@ -1,0 +1,354 @@
+/* First the Grid */
+
+/* https://www.imarketinx.de/artikel/responsive-image-gallery-with-css-grid.html */
+
+/* https://codepen.io/drralte/pen/NWxyezz */
+
+.gallery-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* The Picture Frame */
+
+.gallery-frame {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #1e0e11;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.gallery-frame figcaption {
+    position: absolute;
+    padding: 3px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #c2abab;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #1e0e11;
+    z-index: 5;
+}
+
+/* The Images */
+
+.gallery-img {
+    max-width: 250px;
+    height: auto;
+    cursor: pointer;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    opacity: .9;
+}
+
+.gallery-img:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.marginauto {
+    position: fixed;
+    border: #c2abab 2px solid;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70vh;
+}
+
+.marginCurrPicDescr {
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    z-index: 5;
+}
+
+.marginDiaContainer {
+    position: fixed;
+    bottom: 120px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #c2ababaf;
+    z-index: 5;
+}
+
+.marginDiaFlex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.marginDiaPlay {
+    flex: 0 0 auto;
+    margin: 0 15px;
+    cursor: pointer;
+    background: url(../img/diashow_play.svg) center no-repeat;
+    height: 52px;
+    width: 52px;
+}
+
+.marginDiaStop {
+    flex: 0 0 auto;
+    margin: 0 15px;
+    cursor: pointer;
+    background: url(../img/diashow_stop.svg) center no-repeat;
+    height: 52px;
+    width: 52px;
+}
+
+.marginDiaRotLeft {
+    flex: 0 0 auto;
+    margin: 0 15px;
+    cursor: pointer;
+    background: url(../img/diashow_left.svg) center no-repeat;
+    height: 52px;
+    width: 52px;
+}
+
+.marginDiaRotRight {
+    flex: 0 0 auto;
+    margin: 0 15px;
+    cursor: pointer;
+    background: url(../img/diashow_right.svg) center no-repeat;
+    height: 52px;
+    width: 52px;
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+
+.marginDiaPlay:hover,
+.marginDiaStop:hover,
+.marginDiaRotLeft:hover,
+.marginDiaRotRight:hover {
+    filter: invert(12%) sepia(77%) saturate(2504%) hue-rotate(330deg) brightness(97%) contrast(97%);
+}
+
+.minGalContainer {
+    position: fixed;
+    background-color: black;
+    bottom: 2px;
+    padding: 5px;
+    color: white;
+    z-index: 6;
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+}
+
+.minGalFlex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    flex-direction: row;
+    overflow-x: hidden;
+    -moz-box-orient: horizontal;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.minGalImg {
+    flex: 0 0 auto;
+    margin: 0 5px;
+    height: 120px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .9;
+}
+
+.minGalImgHide {
+    display: none;
+}
+
+.minGalImg:hover {
+    border: #cf8693 3px solid;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.hoverMinGalImg {
+    margin: 0 5px;
+    height: 120px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .9;
+    border: #7e172b 3px solid;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.marginCurrPicNr {
+    position: fixed;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: rgb(160, 137, 137);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    z-index: 6;
+}
+
+.marginPrevButton {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    /* transform: translate(-50%, -50%); */
+    background: url(../img/pfeil_links.svg) center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    height: 52px;
+    width: 52px;
+    z-index: 5;
+}
+
+.marginPrevButton:hover,
+.marginNextButton:hover {
+    filter: invert(12%) sepia(77%) saturate(2504%) hue-rotate(330deg) brightness(97%) contrast(97%);
+}
+
+.arrowLeft:hover {
+    background-color: beige;
+    fill: "#c2abab";
+    stroke: "#1e0e11";
+    stroke-width: "2";
+}
+
+.marginNextButton {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    /* transform: translate(-50%, -50%); */
+    background: url(../img/pfeil_rechts.svg) center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    height: 52px;
+    width: 52px;
+    z-index: 5;
+}
+
+.marginNextButton:hover {
+    -webkit-animation: nextarrow 0.6s infinite alternate ease-in-out;
+    animation: nextarrow 0.6s infinite alternate ease-in-out;
+}
+
+.marginPrevButton:hover {
+    -webkit-animation: prevarrow 0.6s infinite alternate ease-in-out;
+    animation: prevarrow 0.6s infinite alternate ease-in-out;
+}
+
+.marginCloseButton {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 47px;
+    height: 47px;
+    cursor: pointer;
+    background-color: rgb(156, 8, 8);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    z-index: 5;
+}
+
+.marginCloseButton:hover,
+.marginPlayButton:hover,
+.marginStopButton:hover,
+.marginRotateLeftButton:hover,
+.marginRotateRightButton:hover {
+    background-color: #c2685c;
+}
+
+.diaShowButtons {
+    vertical-align: middle;
+}
+
+@-webkit-keyframes nextarrow {
+    0% {
+        -webkit-transform: translateX(0);
+        opacity: 0.4
+    }
+
+    100% {
+        -webkit-transform: translateX(-0.4em);
+        opacity: 0.9
+    }
+}
+
+@keyframes nextarrow {
+    0% {
+        transform: translateX(0);
+        opacity: 0.4
+    }
+
+    100% {
+        transform: translateX(-0.4em);
+        opacity: 0.9
+    }
+}
+
+@-webkit-keyframes prevarrow {
+    0% {
+        -webkit-transform: translateX(0);
+        opacity: 0.4
+    }
+
+    100% {
+        -webkit-transform: translateX(0.4em);
+        opacity: 0.9
+    }
+}
+
+@keyframes prevarrow {
+    0% {
+        transform: translateX(0);
+        opacity: 0.4
+    }
+
+    100% {
+        transform: translateX(0.4em);
+        opacity: 0.9
+    }
+}

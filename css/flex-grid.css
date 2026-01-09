@@ -1,0 +1,21 @@
+.flex-grid {
+    display: flex;
+}
+
+.flex-grid .col {
+    flex: 1;
+}
+
+.flex-grid {
+    margin: 0 0 10px 0;
+}
+
+.col {
+    background-color: #135;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 150%;
+    margin: 0px 5px 5px 5px;
+    border-radius: 5px;
+    padding: 20px;
+}
