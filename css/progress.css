@@ -1,0 +1,72 @@
+/* RESET */
+
+/* PROGRESS SLIDER */
+.progress-dots {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    z-index: 5;
+}
+
+/* Hintergrundlinie */
+.progress-track {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: #ddd;
+    transform: translateX(-50%);
+    z-index: -2;
+}
+
+/* Fortschrittslinie */
+.progress-fill {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 0;
+    background: #c2abab;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: height 0.3s ease;
+}
+
+/* DOTS */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #d3c1c1;
+    border: 1px solid #ffffff;
+    /* weiße Umrandung */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #c2abab;
+    border: 2px solid #ffffff;
+    /* stärker beim aktiven Punkt */
+    transform: scale(1.6);
+}
+
+body.overlay-gal-open .progress-dots {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* OPTIONAL: Mobile ausblenden */
+@media (max-width: 741px) {
+    .progress-dots {
+        display: none;
+    }
+}

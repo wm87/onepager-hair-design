@@ -116,6 +116,7 @@ $(function () {
     // --- Overlay schließen ---
     const closeFn = () => {
         overlayGal.hide();
+        hideSlider();
         $("body").removeClass("overlay-active");
         stopFn();
         counter = 0;
@@ -136,6 +137,7 @@ $(function () {
         counter = pic.index(this);
         rotateDeg = 0;
         updateGallery();
+        showSlider();
         overlayGal.show();
         $("body").addClass("overlay-active");
     });
@@ -165,5 +167,17 @@ $(function () {
         updateGallery();
         elem.fadeIn(300);
     }
+
+    // Overlay öffnen
+    function showSlider() {
+        document.body.classList.add('overlay-gal-open');
+    }
+
+    // Overlay schließen
+    function hideSlider() {
+        document.body.classList.remove('overlay-gal-open');
+    }
+
+
 
 });
