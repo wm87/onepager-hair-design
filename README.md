@@ -13,10 +13,6 @@
 
 ---
 
-## Hero Section
-
-![Hero Section](./assets/hero_section.png)
-
 ## ✨ Projektübersicht
 
 Diese Repository enthält eine **Onepager-Webseite für ein fiktives Hair Design Studio**, entwickelt mit Fokus auf **Design**, **klare Nutzerführung** und **Markenwirkung**.
@@ -73,40 +69,6 @@ Dennoch wurde bei der Auswahl besonders auf:
 
 ---
 
-## 📂 Projektstruktur
-
-Die Projektstruktur ist klar getrennt um Wartbarkeit und Übersicht zu gewährleisten:
-
-```
-onepager-hair-design/
-├── css/
-│   ├── abgabe.css        # Hauptlayout & globale Styles
-│   ├── nav.css           # Navigation & Header
-│   ├── formular.css      # Kontaktformular
-│   ├── preise.css        # Preissektion
-│   ├── flex-grid.css     # Flexbox Grid-System
-│   ├── custom_grid.css   # Eigenes Grid
-│   └── griddy.css        # Experimentelle Layouts
-│
-├── html/
-│   ├── index.html        # Onepager-Struktur
-│   ├── style.css        # Seitenübergreifende Styles
-│   ├── gallery.css      # Galerie-Styles
-│   └── nav.js            # Navigation & Interaktionen
-│
-├── img/
-│   ├── galerie/          # Hair-Galerie (Pixabay)
-│   ├── HG_1.jpg          # Hero / Hintergrundbilder
-│   ├── HG_2.jpg
-│   ├── Logo.svg          # Branding
-│   ├── diashow_*.svg     # Galerie-Steuerung
-│   └── trenner_*.svg     # Design-Elemente
-│
-└── README.md
-```
-
----
-
 ## 🚀 Lokale Nutzung
 
 ```bash
@@ -145,6 +107,17 @@ Zentrale Designprinzipien:
 * Beauty Studios
 * Portfolio-Webseite
 * Landingpage für Terminbuchung
+
+---
+
+## Sections
+
+![Hero Section](./assets/hero_section.png)
+![Team Section](./assets/team_section.png)
+![Service Section](./assets/service_section.png)
+![Price Section](./assets/price_section.png)
+![Gallery Section](./assets/gallery_section.png)
+![Contact Section](./assets/contact_section.png)
 
 ---
 
