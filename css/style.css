@@ -186,10 +186,10 @@ header {
 }
 
 .flex_content_team .col-3 {
-    margin-top: 5vh;
     text-align: left;
     justify-content: space-evenly;
-    width: 30%;
+    padding-bottom: 20px;
+    width: 25%;
     z-index: 3;
 }
 
@@ -281,11 +281,9 @@ p {
 
 
 .team_small_member {
-    height: 300px;
-    /* Bildbereich fest */
-    width: 100%;
-    margin-bottom: 1rem;
+    height: 330px;
 }
+
 
 .team_small_member img {
     width: 100%;
@@ -298,7 +296,9 @@ p {
 
 .team_job_descr {
     font-size: 0.9em;
-    margin-top: 0.3rem;
+    display: block;
+    margin-bottom: 20px;
+    /* Abstand zum unteren Rand */
 }
 
 ul.liste_leistung {
@@ -537,11 +537,6 @@ body.overlay-active {
         height: auto;
     }
 
-    .rect_left,
-    .rect_right {
-        display: none;
-    }
-
     .flex_content_preise {
         position: relative;
         flex-wrap: wrap;
@@ -572,9 +567,7 @@ body.overlay-active {
     }
 
     .preise_sponsoren [class*="flx_"],
-    .preise_schere,
-    .rect_left,
-    .rect_right {
+    .preise_schere {
         display: none;
     }
 
@@ -642,30 +635,6 @@ body.overlay-active {
         align-content: center;
         z-index: 1;
     }
-
-    .rect_left {
-        background-color: #9e8a84;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 150px;
-        height: 100%;
-        /* <-- vorher fix 400px, jetzt passt sich der Section an */
-        z-index: 0;
-        /* <-- hinter die Team-Mitglieder */
-    }
-
-    .rect_right {
-        background-color: #ba968f;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 400px;
-        height: 80px;
-        z-index: 0;
-        /* <-- hinter die Team-Mitglieder */
-    }
-
 
     .flex_content.space_evenly {
         justify-content: space-evenly;
