@@ -28,10 +28,10 @@
             <ul class="ul_nav">
                 <li><a class="logoMain" href="#"></a></li>
                 <li><a href="#kontaktAnker">Kontakt</a></li>
-                <li><a href="#galerieAnker">Galerie</a></li>
-                <li><a href="#preiseAnker">Preise</a></li>
-                <li><a href="#leistungAnker">Leistungen</a></li>
-                <li><a href="#teamAnker">Team</a></li>
+                <li><a href="#gallery_anchor">Galerie</a></li>
+                <li><a href="#price_anchor">Preise</a></li>
+                <li><a href="#service_anchor">Leistungen</a></li>
+                <li><a href="#team_anchor">Team</a></li>
             </ul>
         </div>
 
@@ -39,10 +39,10 @@
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn">&times;</a>
                 <div class="overlay-content">
-                    <a href="#teamAnker">Team</a>
-                    <a href="#leistungAnker">Leistungen</a>
-                    <a href="#preiseAnker">Preise</a>
-                    <a href="#galerieAnker">Galerie</a>
+                    <a href="#team_anchor">Team</a>
+                    <a href="#service_anchor">Leistungen</a>
+                    <a href="#price_anchor">Preise</a>
+                    <a href="#gallery_anchor">Galerie</a>
                     <a href="#kontaktAnker">Kontakt</a>
                     <p class="tel"><a href="tel:0351123456">0351 / 123 456</a></p>
                 </div>
@@ -61,11 +61,11 @@
             <div class="progress-fill"></div>
 
             <span class="dot" data-target="teaser"></span>
-            <span class="dot" data-target="teamAnker"></span>
-            <span class="dot" data-target="leistungAnker"></span>
-            <span class="dot" data-target="preiseAnker"></span>
-            <span class="dot" data-target="galerieAnker"></span>
-            <span class="dot" data-target="kontaktAnker"></span>
+            <span class="dot" data-target="team_anchor"></span>
+            <span class="dot" data-target="service_anchor"></span>
+            <span class="dot" data-target="price_anchor"></span>
+            <span class="dot" data-target="gallery_anchor"></span>
+            <span class="dot" data-target="contact_anchor"></span>
         </div>
 
         <!-- Teaser -->
@@ -82,7 +82,7 @@
         </section>
 
         <!-- Team -->
-        <section id="teamAnker" class="team">
+        <section id="team_anchor" class="team">
             <div class="wrapper">
                 <div class="flex_content">
                     <h2>Unser Team</h2>
@@ -122,7 +122,7 @@
         </section>
 
         <!-- Leistungen -->
-        <section id="leistungAnker" class="leistung">
+        <section id="service_anchor" class="leistung">
             <div class="wrapper">
                 <div class="flex_content">
                     <h2>Leistungen</h2>
@@ -164,7 +164,7 @@
         </section>
 
         <!-- Preise -->
-        <section id="preiseAnker" class="preise">
+        <section id="price_anchor" class="preise">
             <div class="wrapper">
                 <div class="flex_content">
                     <h2>Preise</h2>
@@ -285,19 +285,17 @@
                 </div>
 
                 <!-- Schere Bild -->
-                <div class="preise_schere"></div>
-
-                <div class="preise_sponsoren">
-                    <div class="info">
-                        <p>Alle Preise sind inkl. Beratung, Pflege, Stylingprodukte und Steuern (19% MwSt), gültig ab
-                            01.01.2026</p>
-                    </div>
+                <div class="scissors_prices"></div>
+                <div class="info-price">
+                    <p>Alle Preise sind inkl. Beratung, Pflege, Stylingprodukte und Steuern (19% MwSt), gültig ab
+                        01.01.2026</p>
                 </div>
+
             </div>
         </section>
 
         <!-- Galerie -->
-        <section id="galerieAnker" class="galerie">
+        <section id="gallery_anchor" class="galerie">
             <div class="wrapper">
                 <div class="flex_content">
                     <h2>Galerie</h2>
@@ -343,7 +341,7 @@
         </section>
 
         <!-- Kontakt -->
-        <section id="kontaktAnker" class="kontakt">
+        <section id="contact_anchor" class="contact">
             <div class="wrapper">
                 <div class="flex_content">
                     <h2>Kontakt</h2>
@@ -355,23 +353,35 @@
                 <div class="flex_content">
                     <div class="col-3">
                         <h3>Addresse</h3>
-                        <p>
-                        <address>Musterstraße 1<br>012345 Dresden</address>
-                        </p>
+                        <table class="opening-hours">
+                            <tr>
+                                <td>Straße</td>
+                                <td>Musterstraße 1</td>
+                            </tr>
+                            <tr>
+                                <td>PLZ, Ort</td>
+                                <td>01069 Dresden</td>
+                            </tr>
+                        </table>
                     </div>
                     <div class="col-3">
                         <h3>Telefon</h3>
                         <p class="tel">
-                            <i class="fa-solid fa-phone phone-icon"></i>
                             <a href="tel:0351123456">0351 / 123 456</a>
                         </p>
                     </div>
                     <div class="col-3">
                         <h3>Öffnungszeiten</h3>
-                        <p>
-                            <span>Mo-Fr</span>&nbsp;&nbsp;&nbsp;9-18 Uhr<br>
-                            <span>Sa.</span>&nbsp;&nbsp;&nbsp;9-13 Uhr
-                        </p>
+                        <table class="opening-hours">
+                            <tr>
+                                <td>Mo-Fr</td>
+                                <td>9-18 Uhr</td>
+                            </tr>
+                            <tr>
+                                <td>Sa</td>
+                                <td>9-13 Uhr</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
 

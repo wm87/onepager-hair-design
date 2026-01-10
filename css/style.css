@@ -40,7 +40,7 @@ td {
     text-align: left;
     position: relative;
     padding: 7px 7px 7px 0px;
-    font-size: 12px;
+    font-size: 14px;
     z-index: 3;
 }
 
@@ -72,7 +72,7 @@ section {
     /* Text zentrieren */
     background-color: rgba(255, 255, 255, 0.459);
     font-size: 1.5rem;
-    color: #FFD700;
+    color: #d4b710;
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
@@ -83,7 +83,7 @@ section {
 }
 
 .phone-icon {
-    color: #FFD700;
+    color: #d4b710;
     /* goldene Farbe für das Symbol */
     font-size: 1.5rem;
     /* gleiche Größe wie Text */
@@ -133,12 +133,12 @@ section {
 }
 
 .team,
-.preise {
+.preise,
+.contact {
     background-color: #f3efe9;
     z-index: 1;
 }
 
-.kontakt,
 .galerie,
 .leistung {
     background-image: url(../img/HG_2.jpg);
@@ -174,14 +174,14 @@ header {
     align-items: center;
 }
 
-.kontakt .flex_content .col-3 {
+.contact .flex_content .col-3 {
     text-align: center;
     align-self: baseline;
     height: 110px;
     width: 30%;
 }
 
-.kontakt .flex_content .col-3:nth-of-type(2) {
+.contact .flex_content .col-3:nth-of-type(2) {
     border-left: #ba968fe1 1px solid;
     border-right: #ba968fe1 1px solid;
 }
@@ -233,7 +233,7 @@ header {
     margin: auto;
 }
 
-.kontakt>.wrapper {
+.contact>.wrapper {
     width: 95vw;
     margin: auto;
 }
@@ -340,7 +340,7 @@ ul.liste_leistung>li:last-child:after {
     display: none;
 }
 
-/* kontakt site */
+/* contact site */
 
 .write_us>p {
     margin-top: 3vh;
@@ -356,8 +356,8 @@ ul.liste_leistung>li:last-child:after {
 
 .form_ele_contact>* {
     width: 100%;
-    background-color: #0000009a;
-    color: whitesmoke;
+    background-color: #f0e3e3;
+    color: rgb(0, 0, 0);
     border: none;
 }
 
@@ -372,11 +372,9 @@ ul.liste_leistung>li:last-child:after {
 }
 
 #form_contact input[type="submit"] {
-    background-color: #c2abab;
+    background-color: #f0e3e3;
     text-align: center;
-    border: 1px solid rgb(31, 31, 14);
     margin: auto;
-    color: #1e0e11;
     width: 80px;
 }
 
@@ -460,6 +458,54 @@ body.overlay-active {
 
 .overlay .closebtn:hover {
     color: brown;
+}
+
+.scissors_prices {
+    background-image: url(../img/Schere.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 488px;
+    height: 488px;
+    z-index: 2;
+}
+
+.opening-hours {
+    margin: 0 auto;
+    /* Zentriert die Tabelle horizontal */
+    border-collapse: collapse;
+    /* Entfernt unnötige Abstände */
+    text-align: center;
+}
+
+.opening-hours td {
+    padding: 10px 5px;
+    /* 10px vertikal, 5px horizontal */
+}
+
+.opening-hours td:first-child {
+    font-weight: bold;
+    /* Wochentage hervorheben */
+}
+
+.opening-hours td:last-child {
+    color: #555;
+    /* Uhrzeiten dezenter */
+}
+
+.info-price p {
+    text-align: center;
+    /* Zentriert den Text */
+    font-size: 12px;
+    /* Kleinere Schrift */
+    color: #555;
+    /* Dezente Farbe, optional */
+    line-height: 1.4;
+    /* Angenehmer Zeilenabstand */
+    margin: 50px 0;
+    /* Wenig Abstand oben/unten */
 }
 
 @media (max-width: 741px) {
@@ -635,17 +681,5 @@ body.overlay-active {
         /* background-color:rgb(240, 231, 231); */
         height: 62vh;
         margin-bottom: 2vh;
-    }
-
-    .preise_schere {
-        background-image: url(../img/Schere.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 488px;
-        height: 488px;
-        z-index: 2;
     }
 }
