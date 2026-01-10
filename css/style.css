@@ -133,14 +133,16 @@ section {
 }
 
 .team,
-.preise,
+.price,
 .contact {
+    padding-bottom: 50px;
     background-color: #f3efe9;
     z-index: 1;
 }
 
 .galerie,
-.leistung {
+.service {
+    padding-bottom: 50px;
     background-image: url(../img/HG_2.jpg);
     background-attachment: fixed;
     color: #dbdac7;
@@ -206,20 +208,20 @@ header {
 
 
 
-.leistung {
+.service {
     position: relative;
 }
 
-.leistung>.wrapper {
+.service>.wrapper {
     width: 95vw;
     margin: auto;
 }
 
-.preise {
+.price {
     position: relative;
 }
 
-.preise>.wrapper {
+.price>.wrapper {
     width: 95vw;
     margin: auto;
 }
@@ -302,17 +304,17 @@ p {
     /* Abstand zum unteren Rand */
 }
 
-ul.liste_leistung {
+ul.liste_service {
     list-style: none;
 }
 
-ul.liste_leistung>li::before {
+ul.liste_service>li::before {
     content: "o";
     font-size: 22px;
     padding-right: 1rem;
 }
 
-ul.liste_leistung>li::after {
+ul.liste_service>li::after {
     content: "|";
     position: absolute;
     left: 3.8px;
@@ -321,22 +323,22 @@ ul.liste_leistung>li::after {
     font-weight: 900;
 }
 
-ul.liste_leistung>li {
+ul.liste_service>li {
     position: relative;
     vertical-align: middle;
     margin-top: 8px;
 }
 
-ul.liste_leistung>li:hover {
+ul.liste_service>li:hover {
     font-size: 1.2rem;
 }
 
-ul.liste_leistung>li:hover::before {
+ul.liste_service>li:hover::before {
     color: #c78d99;
     font-size: 22px;
 }
 
-ul.liste_leistung>li:last-child:after {
+ul.liste_service>li:last-child:after {
     display: none;
 }
 
@@ -496,16 +498,12 @@ body.overlay-active {
 }
 
 .info-price p {
+    margin-top: 50px;
     text-align: center;
     /* Zentriert den Text */
-    font-size: 12px;
+    font-size: 10px;
     /* Kleinere Schrift */
     color: #555;
-    /* Dezente Farbe, optional */
-    line-height: 1.4;
-    /* Angenehmer Zeilenabstand */
-    margin: 50px 0;
-    /* Wenig Abstand oben/unten */
 }
 
 @media (max-width: 741px) {
@@ -598,7 +596,7 @@ body.overlay-active {
         margin-bottom: 2vh;
     }
 
-    .flex_content.space_evenly .col-preise {
+    .flex_content.space_evenly .col-price {
         background-color: rgb(240, 231, 231);
         margin-bottom: 2vh;
     }
@@ -669,14 +667,14 @@ body.overlay-active {
         height: 60vh;
     }
 
-    .flex_content.space_evenly .col-preise:first-of-type {
+    .flex_content.space_evenly .col-price:first-of-type {
         width: 415px;
         /* background-color: rgb(240, 231, 231); */
         height: 62vh;
         margin-bottom: 2vh;
     }
 
-    .flex_content.space_evenly .col-preise:last-of-type {
+    .flex_content.space_evenly .col-price:last-of-type {
         width: 300px;
         /* background-color:rgb(240, 231, 231); */
         height: 62vh;
