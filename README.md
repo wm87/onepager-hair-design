@@ -1,6 +1,5 @@
 # 💇‍♀️ Hair Design – Onepager Website
 
-![WIP](https://img.shields.io/badge/status-WIP-orange)
 ![Mobile First](https://img.shields.io/badge/design-mobile--first-success)
 ![Responsive](https://img.shields.io/badge/layout-responsive-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -117,7 +116,9 @@ Zentrale Designprinzipien:
 ![Service Section](./assets/service_section.png)
 ![Price Section](./assets/price_section.png)
 ![Gallery Section](./assets/gallery_section.png)
+![Gallery Overlay](./assets/gallery_overlay.png)
 ![Contact Section](./assets/contact_section.png)
+![Footer Section](./assets/footer.png)
 
 ---
 
