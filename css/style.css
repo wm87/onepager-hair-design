@@ -462,18 +462,6 @@ body.overlay-active {
     color: brown;
 }
 
-.scissors_prices {
-    background-image: url(../img/Schere.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 488px;
-    height: 488px;
-    z-index: 2;
-}
-
 .opening-hours {
     margin: 0 auto;
     /* Zentriert die Tabelle horizontal */
@@ -679,5 +667,17 @@ body.overlay-active {
         /* background-color:rgb(240, 231, 231); */
         height: 62vh;
         margin-bottom: 2vh;
+    }
+
+    .scissors_prices {
+        background-image: url(../img/Schere.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 488px;
+        height: 488px;
+        z-index: 2;
     }
 }
