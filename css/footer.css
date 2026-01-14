@@ -96,3 +96,66 @@
         padding: 40px 6%;
     }
 }
+
+/* ================================
+   LEGAL PAGES (Impressum & Datenschutz)
+================================ */
+
+.impressum,
+.datenschutz {
+    padding: 10vh 6vw;
+    background-color: #f8f5f2;
+    color: #3b2f2a;
+}
+
+/* Headlines – möglichst wenig eingerückt */
+.impressum h1,
+.datenschutz h1 {
+    margin-bottom: 30px;
+}
+
+.impressum h2,
+.datenschutz h2 {
+    margin-top: 35px;
+    font-size: 1.2rem;
+}
+
+/* Textblöcke – leicht eingerückt */
+.impressum p,
+.datenschutz p {
+    line-height: 1.7;
+    margin-left: 1.5rem;
+    max-width: 900px;
+}
+
+/* Listen sauber einrücken */
+.impressum ul,
+.datenschutz ul {
+    margin: 15px 0 15px 3rem;
+    padding-left: 1.2rem;
+}
+
+.impressum ul li,
+.datenschutz ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 741px) {
+
+    .impressum,
+    .datenschutz {
+        padding: 8vh 6vw;
+    }
+
+    .impressum p,
+    .datenschutz p {
+        margin-left: 0.5rem;
+    }
+
+    .impressum ul,
+    .datenschutz ul {
+        margin-left: 2rem;
+    }
+}
