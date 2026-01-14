@@ -13,6 +13,11 @@ h2 {
     margin-top: 50px;
 }
 
+h3 {
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
 body {
     margin: 0;
 }
@@ -651,7 +656,7 @@ body.overlay-active {
 
     .flex_content.space_evenly .col2 {
         /* background-color: tomato; */
-        width: 48%;
+        width: 45%;
         height: 60vh;
     }
 
